@@ -202,7 +202,7 @@ scenarios:
 - name: ipnut is email
   code: |-
     const mockData = {
-      input: " scuba.Ben@gmail.com ",
+      input: "User.Name+Newsletter@Gmail.com",
       encoding: "hex",
       type: "name",
       defaultCountryCode : "49"
@@ -216,7 +216,7 @@ scenarios:
 - name: input is phone
   code: |-
     const mockData = {
-      input: " 0176-83018157",
+      input: " 0176-54648789",
       encoding: "hex",
       type: "phone",
       defaultCountryCode : "49"
@@ -230,7 +230,7 @@ scenarios:
 - name: input is name
   code: |-
     const mockData = {
-      input: "Bernhard",
+      input: "/MaxMustermann/",
       encoding: "hex",
       type: "name",
       defaultCountryCode : "49"
@@ -246,6 +246,6 @@ setup: ''
 
 ___NOTES___
 
-Created on 22.9.2025, 09:29:59
+Created on 22.9.2025, 10:14:49
 
 
