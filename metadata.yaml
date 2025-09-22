@@ -7,5 +7,5 @@ categories:
   - "UTILITY"
 
 versions:
-  - sha: "placeholder-commit-sha"  # Git-Commit-SHA des Commits, der template.tpl enthält
+  - sha: "7ec1b56"  # Git-Commit-SHA des Commits, der template.tpl enthält
     changeNotes: "Initial release: Text normalization, email normalization (Gmail dots/+tags), phone normalization (E.164), SHA-256 hashing in hex/base64"
