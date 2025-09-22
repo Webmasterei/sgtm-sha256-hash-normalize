@@ -1,12 +1,4 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "MACRO",
@@ -82,7 +74,13 @@ const log = require('logToConsole');
 const sha256Sync = require('sha256Sync');
 const createRegex = require('createRegex');
 
-const input = (data.input || '') + '';
+const rawInput = data.input;
+if (rawInput === undefined || rawInput === null) {
+  return undefined;
+}
+const input = (rawInput || '') + '';
+if(input ==="" || input === null || input === undefined) return undefined;
+
 const encoding = (data.encoding || 'hex') + '';
 const type = (data.type || 'text') + '';
 const defaultCC = (data.defaultCountryCode || '') + '';
@@ -202,7 +200,7 @@ scenarios:
 - name: ipnut is email
   code: |-
     const mockData = {
-      input: "User.Name+Newsletter@Gmail.com",
+      input: "user.Name+foo@gmail.com",
       encoding: "hex",
       type: "name",
       defaultCountryCode : "49"
