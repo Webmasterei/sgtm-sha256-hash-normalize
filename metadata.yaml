@@ -1,0 +1,11 @@
+name: "Normalize & SHA256 Hash"
+description: "Server-Side GTM variable that normalizes text/email/phone and hashes with SHA-256 for privacy-safe matching"
+homepage: "https://github.com/your-username/sgtm-sha256-hash-normalize"
+documentation: "https://github.com/your-username/sgtm-sha256-hash-normalize#readme"
+
+categories:
+  - "UTILITY"
+
+versions:
+  - sha: "placeholder-commit-sha"  # Git-Commit-SHA des Commits, der template.tpl enthält
+    changeNotes: "Initial release: Text normalization, email normalization (Gmail dots/+tags), phone normalization (E.164), SHA-256 hashing in hex/base64"
